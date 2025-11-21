@@ -18,8 +18,10 @@ public class Test01 {
 //        mvn test -DBROWSER=chrome -DENV=QA
 //        Then in Java you read them with:
 
-        String browser = System.getProperty("BROWSER");
-        String env = System.getProperty("ENV");
+        String browser = System.getProperty("remote");
+        String env = System.getProperty("remote");
+
+
         //✔ This is the standard way for Jenkins parameters.
 
 
