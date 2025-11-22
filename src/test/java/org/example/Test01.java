@@ -18,8 +18,10 @@ public class Test01 {
 //        mvn test -DBROWSER=chrome -DENV=QA
 //        Then in Java you read them with:
 
-        String remote = System.getProperty("remote");
-        String browser = System.getProperty("browser");
+        //
+        //mvn test -DBrowser=${browser} -DRemote=${remote}
+        String remote = System.getProperty("Browser");
+        String browser = System.getProperty("Remote");
 
 
         System.out.println("remote value from is "+remote);
